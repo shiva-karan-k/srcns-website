@@ -1,0 +1,97 @@
+# Cursor AI Rules for Sri Rama Aditya Nursing School Project
+
+## Project Structure
+- Stay in the main project root: `/srcns-website/`
+- All files should be in the root directory, not in subdirectories
+- Next.js structure: `src/app/`, `src/components/`, `src/lib/`
+
+## Tech Stack
+- Next.js 14 with App Router
+- TypeScript
+- Tailwind CSS + DaisyUI
+- Framer Motion for animations
+- Radix UI components
+
+## File Paths
+- Always use relative paths from project root
+- Components: `src/components/ComponentName.tsx`
+- Pages: `src/app/page.tsx`, `src/app/layout.tsx`
+- Utils: `src/lib/utils.ts`
+- Styles: `src/app/globals.css`
+
+## Styling Guidelines
+- Use DaisyUI classes: `btn`, `card`, `hero`, `badge`, etc.
+- Custom colors: `primary` (orange), `secondary` (blue), `accent` (yellow)
+- Responsive design: mobile-first approach
+- Animations: Use Framer Motion for smooth transitions
+
+## Component Rules
+- All components must be TypeScript with proper interfaces
+- Use 'use client' for interactive components
+- Export as default
+- Import using `@/` alias for src folder
+
+## Code Quality
+- Use semantic HTML
+- Proper accessibility attributes
+- Clean, readable code with comments
+- Consistent naming conventions
+
+## Development Workflow
+- Always work in the main directory
+- Test changes with `npm run dev`
+- Use localhost:3000 for preview
+- Keep components modular and reusable
+
+## Anti-Stuck Rules
+- NEVER wait for user input during commands
+- If a command hangs, immediately cancel and try alternative
+- Always provide clear next steps
+- Fix errors immediately, don't wait
+- Keep moving forward with solutions
+
+## Design Standards
+- NEVER use emojis in any component or UI element
+- Always use DaisyUI components (card, btn, badge, hero, etc.)
+- Use proper DaisyUI color system (primary, secondary, accent, etc.)
+- Maintain consistent padding using DaisyUI spacing classes
+- Use uploaded images instead of placeholder content
+
+## Verification Standards
+- NEVER claim something is "completed" or "fixed" without verification
+- ALWAYS read the file after making changes to confirm they were applied
+- ALWAYS check for syntax errors after editing components
+- NEVER mark todos as completed until actually verified working
+- If claiming an image is used, verify the path and implementation
+- Be honest about what's actually working vs what was attempted
+
+## Anti-Lying Rules
+- NEVER claim visual changes are "working" without seeing them in browser
+- ALWAYS restart dev server after major changes and verify visually
+- NEVER say "fixed" when only code was changed but not verified in browser
+- ALWAYS kill stuck Node.js processes if changes aren't appearing
+- NEVER mark visual TODOs as completed without browser verification
+- Be explicit: "Code changed but needs browser verification" vs "Visually confirmed working"
+
+## Responsive Design Standards
+- NEVER put buttons/elements on separate lines that should be inline
+- ALWAYS use proper flex layouts for horizontal elements on desktop
+- ALWAYS test responsive states - mobile vs desktop layouts
+- ALWAYS maintain proper spacing and padding across all screen sizes
+- USE flex-col on mobile, flex-row on desktop for button groups
+- ENSURE cards have consistent padding and white backgrounds
+
+## Design Standards
+- Premium, modern UI with professional styling
+- Glassmorphism effects with backdrop-blur
+- Smooth animations and micro-interactions
+- Mobile-responsive design
+- Orange/blue color scheme for medical theme
+
+## Component Library Standards
+- ALWAYS use DaisyUI components: btn, card, badge, hero, stat, divider, etc.
+- NEVER create custom button styles - use DaisyUI btn classes
+- ALWAYS use DaisyUI color system: primary, secondary, accent, base-100, etc.
+- Use Tailwind utilities for spacing and layout, DaisyUI for components
+- For icons, use Heroicons or Lucide React only - no custom SVGs unless necessary
+- Maintain consistent spacing using DaisyUI/Tailwind classes: p-4, m-6, gap-4, etc.
