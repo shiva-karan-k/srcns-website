@@ -19,7 +19,7 @@ export default function Home() {
 
   return (
     <main className="min-h-screen">
-      <FluidNavbar />
+      <FluidNavbar onApplyClick={openJoinModal} />
       <PremiumHero onJoinClick={openJoinModal} />
       <FluidFacilities />
       <DaisyAboutDirector />
