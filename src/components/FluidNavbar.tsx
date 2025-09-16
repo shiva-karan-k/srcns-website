@@ -104,7 +104,7 @@ export default function FluidNavbar({ onContactClick, onApplyClick }: FluidNavba
           <div className="flex items-center gap-1 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-1">
             {/* Apply Now Button */}
             <motion.button 
-              onClick={onApplyClick || (() => scrollToSection('join'))}
+              onClick={onApplyClick}
               className="flex items-center space-x-2 px-4 py-2 rounded-md text-sm font-medium bg-orange-500 hover:bg-orange-600 text-white transition-all duration-200"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
